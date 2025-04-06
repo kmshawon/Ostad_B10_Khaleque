@@ -28,9 +28,9 @@ d)In the main function, create an object of Car, set the speed, and call the mov
 abstract class Vehicle{
   int  _speed=0;
   move();
-  void setSpeed(int speed) {
-    _speed = speed;
-  }
+  // void setSpeed(int speed) {
+  //   _speed = speed;
+  // }
 
   int get speed => _speed;
 }
@@ -46,8 +46,8 @@ class Car extends Vehicle{
 }
 main(){
   Car BMW = Car();
-  BMW.setSpeed(189);
- // BMW._speed=189; eta dile ow Kaj kore don't know Why But kaj to korar kotha nah
+  //BMW.setSpeed(189);
+  BMW._speed=189;
   BMW.move();
 
 }
